@@ -5,7 +5,7 @@ This section contains a simple Go lang webserver that accepts a query parameter,
 ## Building a container
 To build a container, simply run:
 ```
-docker build -t helloworld .
+docker build -t helloworld:v1 .
 ```
 
 To run the container:
