@@ -36,3 +36,11 @@ In another terminal or in a browser, visit `localhost:8080/hello?name=world``
 
 You should see the response; `Hello, world` once again.
 
+Great job so far!
+
+Let's close down this cluster, and continue to the next demo.
+
+```
+$ kind delete clusters kind
+```
+
