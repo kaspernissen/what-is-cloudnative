@@ -1,24 +1,22 @@
-# Containers
+# 1. Containers
 
-This section contains a simple Go lang webserver that accepts a query parameter, name, and responds back `Hello, <name>`.
+This section contains a simple Go lang webserver that accepts a query parameter, `name`, and responds back `Hello, <name>`.
 
-## Building a container
-To build a container, simply run:
+## Building the docker container
+To build the container, simply run:
 ```
-docker build -t helloworld:v1 .
-```
-
-To run the container:
-```
-docker run -d -p 8080:8080 helloworld
+$ docker build -t helloworld:v1 .
 ```
 
-This will run the container and expose port 8080 on `localhost`.
+Next you can run the container and expose the webservers port 8080 on your machines `localhost`:
+```
+$ docker run -d -p 8080:8080 helloworld:v1
+```
 
 You can now test that everything works: 
 
 ```
-curl localhost:8080/hello?name=world
+$ curl localhost:8080/hello?name=world
 ```
 
 The response should be; `Hello, world`
