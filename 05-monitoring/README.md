@@ -1,6 +1,6 @@
 # Monitoring
 
-In this section we will explore monitoring a bit. To get up and running quickly we will use the official helm chart for the prometheus-operator. 
+In this section we will explore monitoring a bit. To get up and running quickly we will use the official helm chart for the prometheus-operator. Let's just continue with our previous cluster.
 
 This requires helm. Helm is a package manager for kubernetes.
 
